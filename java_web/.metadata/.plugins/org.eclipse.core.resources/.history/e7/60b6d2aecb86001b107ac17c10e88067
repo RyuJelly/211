@@ -1,0 +1,8 @@
+$(function(){
+	$('<ol id=notes"></ol>').insertBefore($('#footer'));
+	
+	$('span.footnote').each(function(i){
+		$(this).before('<a>[' + (i+1) + ']</a>').appendTo('#notes')
+	});
+	
+});

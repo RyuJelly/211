@@ -1,0 +1,11 @@
+$(function(){
+	$('.quantity input').change(function(){
+		var price = $(this).parent().parent().find('.price').text();
+		alert(price);
+		//var quantity = $(this)
+		//var cost = 
+	});
+});
+
+
+

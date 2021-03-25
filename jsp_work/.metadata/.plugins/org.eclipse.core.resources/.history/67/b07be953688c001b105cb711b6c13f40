@@ -1,0 +1,10 @@
+package kosta.bean;
+
+public class BoardDao {
+	
+	public BoardDao() {}
+	
+	public void insert(Board board) {
+		System.out.println(board);
+	}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="search.css">
+</head>
+<body>
+	<div class="search_section_top_badge">
+		<div class="bagde_area type_artist  ">
+			<!---->
+			<!---->
+			<div class="album_thumbnail type_artist sm_size">
+				<a
+					href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+					class="link_thumbnail" title="아이유 (IU) 자세히보기"
+					style="background-image: url(&quot;https://cdn.music-flo.com/image/artist/875/043/03/04/403043875_5eb4b748.jpg?1588901704962/dims/resize/x500/quality/90&quot;);"></a>
+				<button title="아이유 (IU) 듣기" class="btn_thumbnail_play">아이유
+					(IU) 듣기</button>
+			</div>
+			<div class="badge_track_info">
+				<div class="info_area">
+					<!---->
+					<!---->
+					<!---->
+					<!---->
+					<p class="artist">
+						<span artist="[object Object]" index="0" class="artist_link">
+							<!----> <a
+							href="/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL"
+							class="last"
+							data-rake="{&quot;actionId&quot;: &quot;move_detail&quot;, &quot;categoryId&quot;: &quot;/thumb_artist&quot;, &quot;pageId&quot;: &quot;/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL&quot;, &quot;artistId&quot;: &quot;80049126&quot;, &quot;artistName&quot; : &quot;아이유 (IU)&quot;, &quot;noBodyPayload&quot;: true}">
+								<!--fragment#58e4d9d858#head-->아이유 (IU)<!--fragment#58e4d9d858#tail-->
+						</a>
+						</span>
+					</p>
+					<!---->
+				</div>
+				<!---->
+				<dl>
+					<dt class="hidden">아티스트 정보</dt>
+					<dd>솔로</dd>
+					<!---->
+					<!---->
+				</dl>
+				<!---->
+				<!---->
+				<div class="util_area">
+					<!---->
+					<!---->
+					<!---->
+					<!---->
+					<button type="button"
+						data-rake="{&quot;actionId&quot;: &quot;play_popular&quot;, &quot;categoryId&quot;: &quot;/thumb_artist&quot;, &quot;pageId&quot;: &quot;/detail/artist/hddeyanz/track?sortType=POPULARITY&amp;roleType=ALL&quot;, &quot;artistId&quot; : &quot;80049126&quot;, &quot;noBodyPayload&quot;: true}"
+						class="btn_popular_listen">인기곡 듣기</button>
+					<!---->
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

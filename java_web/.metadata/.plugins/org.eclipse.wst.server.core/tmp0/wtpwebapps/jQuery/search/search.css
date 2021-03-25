@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.search_section_top_badge {
+	margin-top: 26px;
+}
+
+.section_content_wrap{
+    padding-top: 40px;
+    position: relative;
+    padding: 70px 0 0 0;
+}
+
+.track_list_table {
+    margin-top: 20px;
+    min-width: 100%;
+    max-width: none;
+    width: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-bottom: 1px solid;
+}
+
+.track_list_table > thead > tr{
+	border-bottom: 1px solid;
+}

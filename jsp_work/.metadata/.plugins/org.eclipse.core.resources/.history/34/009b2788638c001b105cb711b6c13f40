@@ -1,0 +1,48 @@
+package kosta.bean;
+
+public class Member {
+	
+	String name;
+	String address;
+	String phoneNum;
+	
+	public Member(){}
+
+	public Member(String writer, String address, String phoneNum) {
+		super();
+		this.writer = writer;
+		this.address = address;
+		this.phoneNum = phoneNum;
+	}
+
+	public String getWriter() {
+		return writer;
+	}
+
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getPhoneNum() {
+		return phoneNum;
+	}
+
+	public void setPhoneNum(String phoneNum) {
+		this.phoneNum = phoneNum;
+	}
+
+	@Override
+	public String toString() {
+		return "Member [writer=" + writer + ", address=" + address + ", phoneNum=" + phoneNum + "]";
+	}
+	
+	
+}

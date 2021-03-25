@@ -1,0 +1,4 @@
+@charset "UTF-8";
+.search_section_top_badge {
+	margin-top: 26px;
+}

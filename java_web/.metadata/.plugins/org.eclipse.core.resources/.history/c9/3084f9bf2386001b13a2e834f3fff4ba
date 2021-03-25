@@ -1,0 +1,21 @@
+$(function(){
+	var $speech = $('div.speech');
+	var defaultSize = $speech.css('fontSize'); //12px
+	
+	$('#swicher button').click(function(){
+		var num = parseInt($speech.css('fontSize'));
+		
+		switch(this.id){
+		case 'switcher-large':
+			num *= 1.2;
+			break;
+		case 'switcher-small':
+			num /= 1.2;
+			break;
+		default:
+			num = parseInt(defaultSize);
+			break;
+		}
+	});
+	
+});

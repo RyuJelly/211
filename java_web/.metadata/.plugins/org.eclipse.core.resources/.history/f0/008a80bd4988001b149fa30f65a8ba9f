@@ -1,0 +1,11 @@
+$(function(){
+	$('.quantity input').change(function(){
+		var price = $(this).parent().parent().find('.price').text().replace(/^[^\d.]/, '')
+		alert(price);
+		//var quantity = $(this)
+		//var cost = 
+	});
+});
+
+
+

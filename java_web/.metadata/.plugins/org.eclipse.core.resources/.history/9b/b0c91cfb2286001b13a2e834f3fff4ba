@@ -1,0 +1,5 @@
+$(function(){
+	var $speech = $('div.speech');
+	var defaultSize = $speech.css('fontSize');
+	alert(defaultSize);
+});

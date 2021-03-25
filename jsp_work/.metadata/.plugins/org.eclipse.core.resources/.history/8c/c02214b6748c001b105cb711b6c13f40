@@ -1,0 +1,62 @@
+package kosta.bean;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
+
+public class BoardDao {
+	private static BoardDao dao = new BoardDao();
+	
+	public static BoardDao getInstance() {
+		return dao;
+	}
+	
+	public List<Board> listBoard(){
+		
+	}
+	
+	public int insert(Board board) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		
+		String url = "jdbc:oracle:thin:@localhost:1521:XE";
+		String user = "kosta211";
+		String password = "1234";
+		String sql = "insert into board values(board_seq.nextval, ?, ?, ?, sysdate, 0)";
+		int re = -1;
+		
+		try {
+			// 1단계: JDBC 드라이버 로딩
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+			// 2단계: connection 객체 생성(DB연결)
+			conn = DriverManager.getConnection(url, user, password);
+			System.out.println("conn: " + conn);
+			// 3단계: PrepareStatement 객체 생성(SQL질의)
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, board.getTitle());
+			pstmt.setString(2, board.getWriter());
+			pstmt.setString(3, board.getContents());
+			
+			re = pstmt.executeUpdate();		// 업데이트된 데이터 숫자 반환 (이 경우 1)
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			if(pstmt != null) {
+				try {
+					pstmt.close();
+				} catch (Exception e2) {}
+			}
+			if(conn != null) {
+				try {
+					pstmt.close();
+				} catch (Exception e2) {}
+			}
+		}
+		
+		return re;
+	}
+}

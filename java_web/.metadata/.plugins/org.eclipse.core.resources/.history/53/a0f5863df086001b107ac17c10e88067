@@ -1,0 +1,30 @@
+// step1
+$(function(){
+	$('#letter-a a').click(function(e){
+		$('#dictionary').hide().load('a.html', function(){
+			$(this).fadeIn();
+		});
+		
+		e.preventDefault;
+		// return false;
+	});
+});
+
+//step2
+$(function(){
+	$('#letter-b a').click(function(e){
+		$.getJSON('b.json', function(data){ 			// 변수안에 json값이 들어온다
+			$('#dictionary').empty();
+			$.each(data, function(index, item){
+				var html = '<div class="entry">';
+				html += '<h3 class="term">' +  + '</h3>';
+				html += '<div class="part">' +  + '</div>';
+				html += '<div class="definition">' +  + '</div>';
+				html += '</div>';
+			});
+		});
+		
+		e.preventDefault;
+		// return false;
+	});
+});

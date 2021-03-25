@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%
+	String checkId = "andigh";
+	String checkPass = "1234";
+	String pageName = "loginForm.jsp";
+
+	String id = request.getParameter("id");
+	String password = request.getParameter("password");
+	
+	if(id == checkId && checkPass == password){
+		request.setAttribute("id", id);
+		
+	}else{
+		
+	}
+	
+	
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+$(function(){
+	$('#selected-plays > li').addClass('horizontal');
+	$('#selected-plays li:not("#selected-plays > li")').addClass('sub-level');
+	$('a[href $= pdf]').addClass('pdflink');
+	$('a[href *= @]').addClass('mailto');
+});

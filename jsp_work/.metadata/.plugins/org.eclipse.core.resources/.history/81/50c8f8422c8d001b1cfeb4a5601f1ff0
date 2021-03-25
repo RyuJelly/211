@@ -1,0 +1,9 @@
+package kosta.bean;
+
+public class BoardBDao2 {
+	private static BoardBDao2 dao = new BoardBDao2();
+	
+	public static BoardBDao2 getInstance() {
+		return dao;
+	}
+}
