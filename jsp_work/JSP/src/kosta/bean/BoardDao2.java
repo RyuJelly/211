@@ -2,6 +2,7 @@ package kosta.bean;
 
 import java.io.InputStream;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -46,14 +47,35 @@ public class BoardDao2 {
 		return board;
 	}
 	
+	public int updateBoard(Board board) {
+		SqlSession sqlSession = getSqlSessionFactory().openSession();
+		int re = -1;
+		
+		try {
+			re = sqlSession.getMapper(BoardMapper.class).updateBoard(board);
+			if(re>0) {
+				sqlSession.commit();
+			}else {
+				sqlSession.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			if(sqlSession != null) {
+				sqlSession.close();
+			}
+		}
+		return re;
+	}
 	
-	public List<Board> listBoard(){
+	
+	public List<Board> listBoard(Map map){
 		SqlSession sqlSession = getSqlSessionFactory().openSession();
 		List<Board> list = null;
 		
 		try {
-			//list = sqlSession.getMapper(BoardMapper.class).listBoard();	
-			list = sqlSession.selectList("kosta.mapper.BoardMapper.listBoard");
+			list = sqlSession.getMapper(BoardMapper.class).listBoard(map);	
+			//list = sqlSession.selectList("kosta.mapper.BoardMapper.listBoard");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally {

@@ -1,12 +1,22 @@
+<%@page import="java.util.HashMap"%>
+<%@page import="java.util.Map"%>
+<%@page import="kosta.bean.Search"%>
 <%@page import="kosta.bean.Board"%>
 <%@page import="java.util.List"%>
 <%@page import="kosta.bean.BoardDao2"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
+	request.setCharacterEncoding("utf-8");
+	Search search = new Search();
+	Map map = new HashMap();
+	//search.setArea(request.getParameterValues("area"));
+	//search.setSearchKey("%" + request.getParameter("searchKey") + "%");
+	map.put("area", request.getParameterValues("area"));
+	map.put("searchKey", "%" + request.getParameter("searchKey") + "%");
+	
 	BoardDao2 dao = BoardDao2.getInstance();
-	List<Board> list = dao.listBoard();
-
+	List<Board> list = dao.listBoard(map);
 %>    
     
 <!DOCTYPE html>
@@ -35,9 +45,19 @@
 			<td><%= board.getWriter() %></td>
 			<td><%= board.getRegdate() %></td>
 			<td><%= board.getHitcount() %></td>
+			<td><a href="updateForm.jsp?seq=<%= board.getSeq() %>">글 수정</a></td>
 		</tr>
 		<%} %>
 	</table>
+	<br><br>
+	
+	<form action="list.jsp" method="post">
+		<input type="checkbox" name="area" value="title">제목
+		<input type="checkbox" name="area" value="writer">작성자
+		<input type="text" name="searchKey" size="10">
+		<input type="submit" value="검색">
+	</form>
+	
 </body>
 </html>
 

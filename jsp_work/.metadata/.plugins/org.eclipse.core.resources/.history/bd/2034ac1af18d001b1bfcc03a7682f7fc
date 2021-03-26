@@ -1,0 +1,16 @@
+package kosta.bean;
+
+public class Search {
+	private String[] area;
+	private String searchKey;
+	
+	public Search() {}
+
+	public Search(String[] area, String searchKey) {
+		super();
+		this.area = area;
+		this.searchKey = searchKey;
+	}
+	
+	
+}

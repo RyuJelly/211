@@ -6,3 +6,11 @@
 3월 25, 2021 10:22:21.76 [4100:1988:0325/102221.730:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
 3월 25, 2021 10:22:38.16 [12744:1524:0325/102238.162:ERROR:device_event_log_impl.cc(214)] [10:22:38.162] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 3월 25, 2021 10:23:03.01 [12744:1524:0325/102303.014:ERROR:device_event_log_impl.cc(214)] [10:23:03.013] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+
+3월 26, 2021 10:31:34.12 NEW SESSION
+3월 26, 2021 10:31:34.12 [10716:1584:0326/103134.119:ERROR:device_event_log_impl.cc(214)] [10:31:34.120] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 26, 2021 10:31:34.17 [10716:1584:0326/103134.122:ERROR:device_event_log_impl.cc(214)] [10:31:34.122] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 26, 2021 10:33:16.35 [10716:1584:0326/103316.356:ERROR:device_event_log_impl.cc(214)] [10:33:16.355] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+3월 26, 2021 10:43:39.30 [9788:13296:0326/104339.299:ERROR:device_event_log_impl.cc(214)] [10:43:39.299] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 26, 2021 10:43:39.33 [9788:13296:0326/104339.303:ERROR:device_event_log_impl.cc(214)] [10:43:39.302] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 26, 2021 10:45:30.86 [9788:13296:0326/104530.865:ERROR:device_event_log_impl.cc(214)] [10:45:30.865] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)

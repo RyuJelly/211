@@ -1,0 +1,22 @@
+* 데이터 접근 프레임워크(Mybatis, JPA)
+클라이언트 -> JSP, Servlet -> Service -> Dao -> ORM Framework -> DB
+
+
+Mybatis
+
+*mapStatement
+<select id="" ....>
+	select .....
+</select>
+
+* mapper file
+  - 여러개의 mapStatement
+
+* mybatis-config.xml => sqlSession객체 => DAO사용
+ => 모든 mybatis와 관련한 설정
+ => mapper file 포함
+
+장점
+ - row, 객체간의 매핑을 해결
+ - 자바소스, SQL구문 구분해서 관리
+ - 동적쿼리문 기타 기능
