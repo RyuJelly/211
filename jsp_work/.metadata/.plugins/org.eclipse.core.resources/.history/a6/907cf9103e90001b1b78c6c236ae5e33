@@ -1,0 +1,11 @@
+package kosta.bean;
+
+public class Product {
+	private String fruit;
+	private int price;
+	private int amount;
+	
+	public Product() {}
+	
+	
+}

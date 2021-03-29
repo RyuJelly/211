@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	before: <%= request.getParameter("fruit") %><br> 
+	after: ${param.fruit }<br><br>
+	
+	before: <%= request.getAttribute("name") %>
+	after: ${name }
+	
+	before: <%= request.getAttribute("member") %>
+	after: ${m.getName }
+</body>
+</html>
