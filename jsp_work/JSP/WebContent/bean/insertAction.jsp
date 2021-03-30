@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-	request.setCharacterEncoding("utf-8");
+	//request.setCharacterEncoding("utf-8");
 %>
 <%-- <jsp:useBean 객체생성 --%>
 <%-- <jsp:setProperty 폼의 내용을 객체에 초기화 --%>

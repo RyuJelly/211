@@ -6,6 +6,8 @@
 <%@page import="kosta.bean.BoardDao2"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%
 	request.setCharacterEncoding("utf-8");
 	Search search = new Search();
@@ -17,6 +19,8 @@
 	
 	BoardDao2 dao = BoardDao2.getInstance();
 	List<Board> list = dao.listBoard(map);
+	
+	request.setAttribute("list", list);
 %>    
     
 <!DOCTYPE html>
@@ -35,19 +39,18 @@
 			<td>작성일자</td>
 			<td>조회수</td>
 		</tr>
-		<%
-			for(int i=0; i<list.size(); i++){
-				Board board = list.get(i);	
-		%>
+		<c:forEach var="board" items="${list }">
 		<tr>	
-			<td><%= board.getSeq() %></td>
-			<td><a href="detail.jsp?seq=<%= board.getSeq() %>"><%= board.getTitle() %></a></td>
-			<td><%= board.getWriter() %></td>
-			<td><%= board.getRegdate() %></td>
-			<td><%= board.getHitcount() %></td>
-			<td><a href="updateForm.jsp?seq=<%= board.getSeq() %>">글 수정</a></td>
+			<td>${board.seq }</td>
+			<td><a href="detail.jsp?seq=${board.seq }">${board.title }</a></td>
+			<td>${board.writer }</td>
+			<td>
+				<fmt:parseDate var="dt" value="${board.regdate }" pattern="yyyy-MM-dd HH:mm:ss"/>
+				<fmt:formatDate value="${dt }" pattern="yyyy/MM/dd"/>
+			</td>
+			<td>${board.hitcount }</td>
 		</tr>
-		<%} %>
+		</c:forEach>
 	</table>
 	<br><br>
 	

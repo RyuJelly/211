@@ -25,4 +25,5 @@
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
 <fullyQualifiedTypeName name="kosta.bean.Search"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="kosta.bean.Member2"/>
 </qualifiedTypeNameHistroy>

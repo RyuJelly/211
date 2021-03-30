@@ -29,7 +29,7 @@
 		수량:<input type="text" name="amount"><br>
 		<input type="submit" value="추가"/>
 	</form>
-	<a href="checkOut.jsp">계산</a>
+	<a href="checkOut2.jsp">계산</a>
 </div>
 </body>
 </html>

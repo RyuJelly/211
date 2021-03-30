@@ -11,6 +11,8 @@
 
 	BoardDao2 dao = BoardDao2.getInstance();
 	Board board = dao.detailBoard(seq);
+	
+	request.setAttribute("board", board);
 %>
 
 <!DOCTYPE html>
@@ -30,12 +32,14 @@
 			<td>조회수</td>
 		</tr>
 		<tr>
-			<td><%=board.getSeq()%></td>
-			<td><%=board.getTitle()%></td>
-			<td><%=board.getWriter()%></td>
-			<td><%=board.getRegdate()%></td>
-			<td><%=board.getHitcount()%></td>
+			<td>${board.seq }</td>
+			<td>${board.title }</td>
+			<td>${board.writer}</td>
+			<td>${board.contents }</td>
+			<td>${board.hitcount }</td>
 		</tr>
 	</table>
+	<a href="updateForm.jsp?seq=${board.seq }">글수정</a>
+	<a>글삭제</a>
 </body>
 </html>

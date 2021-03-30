@@ -32,3 +32,18 @@
 3월 29, 2021 16:45:59.80 [10732:5128:0329/164559.791:ERROR:device_event_log_impl.cc(214)] [16:45:59.790] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 3월 29, 2021 16:45:59.80 [10732:5128:0329/164559.802:ERROR:device_event_log_impl.cc(214)] [16:45:59.801] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
 3월 29, 2021 16:51:08.28 [10732:5128:0329/165108.289:ERROR:device_event_log_impl.cc(214)] [16:51:08.288] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+
+3월 30, 2021 10:51:20.94 NEW SESSION
+3월 30, 2021 10:51:20.94 [9992:828:0330/105120.939:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+3월 30, 2021 10:51:20.96 [9992:828:0330/105120.940:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+3월 30, 2021 10:51:20.97 [9992:828:0330/105120.940:ERROR:disk_cache.cc(184)] Unable to create cache
+3월 30, 2021 10:51:20.98 [9992:828:0330/105120.940:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+3월 30, 2021 10:51:34.96 [1472:13168:0330/105134.969:ERROR:device_event_log_impl.cc(214)] [10:51:34.968] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 30, 2021 10:51:34.98 [1472:13168:0330/105134.972:ERROR:device_event_log_impl.cc(214)] [10:51:34.972] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 30, 2021 10:53:24.34 [1472:13168:0330/105324.343:ERROR:device_event_log_impl.cc(214)] [10:53:24.342] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+3월 30, 2021 11:09:23.50 [3364:13232:0330/110923.500:ERROR:device_event_log_impl.cc(214)] [11:09:23.500] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 30, 2021 11:09:23.51 [3364:13232:0330/110923.502:ERROR:device_event_log_impl.cc(214)] [11:09:23.503] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 30, 2021 11:11:15.14 [3364:13232:0330/111115.149:ERROR:device_event_log_impl.cc(214)] [11:11:15.148] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+3월 30, 2021 11:27:20.68 [11632:7604:0330/112720.686:ERROR:device_event_log_impl.cc(214)] [11:27:20.686] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 30, 2021 11:27:20.69 [11632:7604:0330/112720.690:ERROR:device_event_log_impl.cc(214)] [11:27:20.689] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+3월 30, 2021 11:27:28.80 [11632:7604:0330/112728.808:ERROR:device_event_log_impl.cc(214)] [11:27:28.807] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
