@@ -31,14 +31,22 @@
 		order by seq desc
 	</select>
 	
-<!-- 	<select id="detailBoard" parameterType="int" resultType="Board">
+	<select id="detailBoard" parameterType="int" resultType="Board">
 		select * from board where seq = #{seq}
 	</select>
 	
 	<update id="updateBoard" parameterType="Board">
-		update board Set TITLE = #{TITLE}, CONTENTS = #{CONTENTS} Where seq = #{seq}
-	</update> -->
+		update board Set title = #{title}, contents = #{contents}
+			Where seq = #{seq}
+	</update>
+	
+	<delete id="deleteBoard" parameterType="int">
+		delete from board where seq = #{seq}
+	</delete>
 
+	<select id="countBoard" resultType="int">
+		select count(*) from board 
+	</select>
 	
 </mapper>
 

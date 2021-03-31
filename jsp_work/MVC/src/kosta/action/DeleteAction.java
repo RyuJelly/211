@@ -1,26 +1,23 @@
 package kosta.action;
 
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import kosta.model.Board;
-import kosta.model.ListModel;
 import kosta.service.BoardService;
 
-public class ListAction implements Action {
+public class DeleteAction implements Action {
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		ActionForward forward = new ActionForward();
 		BoardService service = BoardService.getInstance();
 		
-		ListModel listModel = service.listBoardService(request);
-		request.setAttribute("listModel", listModel);
+		int seq = Integer.parseInt(request.getParameter("seq"));
+		service.deleteBoardService(seq);
 		
-		forward.setRedirect(false);
-		forward.setPath("/list.jsp");
+		forward.setRedirect(true);
+		forward.setPath("listAction.do");
 		
 		return forward;
 	}

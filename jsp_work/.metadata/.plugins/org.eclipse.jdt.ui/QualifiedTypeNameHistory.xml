@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
@@ -18,7 +16,6 @@
 <fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="kosta.bean.Board"/>
 <fullyQualifiedTypeName name="kosta.mapper.BoardMapper"/>
@@ -26,4 +23,27 @@
 <fullyQualifiedTypeName name="kosta.bean.Search"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="kosta.bean.Member2"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="kosta.action.Action"/>
+<fullyQualifiedTypeName name="kosta.action.insertFormAction"/>
+<fullyQualifiedTypeName name="kosta.action.InsertFormAction"/>
+<fullyQualifiedTypeName name="kosta.model.BoardDao2"/>
+<fullyQualifiedTypeName name="kosta.action.InsertAction"/>
+<fullyQualifiedTypeName name="kosta.action.ListAction"/>
+<fullyQualifiedTypeName name="kosta.action.DetailAction"/>
+<fullyQualifiedTypeName name="kosta.action.UpdateAction"/>
+<fullyQualifiedTypeName name="kosta.action.updateAction"/>
+<fullyQualifiedTypeName name="sun.print.resources.serviceui"/>
+<fullyQualifiedTypeName name="kosta.action.ActionForward"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="kosta.service.BoardService"/>
+<fullyQualifiedTypeName name="kosta.action.DeleteAction"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.RowBounds"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="kosta.model.Board"/>
+<fullyQualifiedTypeName name="kosta.model.ListModel"/>
 </qualifiedTypeNameHistroy>

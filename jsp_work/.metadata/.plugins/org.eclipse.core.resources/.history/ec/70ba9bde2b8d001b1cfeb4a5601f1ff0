@@ -1,7 +1,0 @@
-package kosta.bean;
-
-public class BoardBDao {
-	public BoardBDao() {
-		// TODO Auto-generated constructor stub
-	}
-}

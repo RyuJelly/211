@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -28,6 +29,22 @@ public class BoardDao2 {
 			e.printStackTrace();
 		}
 		return new SqlSessionFactoryBuilder().build(in);
+	}
+	
+	public int countBoard() {
+		SqlSession sqlSession = getSqlSessionFactory().openSession();
+		int re = 0;
+		
+		try {
+			re = sqlSession.getMapper(BoardMapper.class).countBoard();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			if(sqlSession != null) {
+				sqlSession.close();
+			}
+		}
+		return re;
 	}
 	
 	public Board detailBoard(int seq) {
@@ -68,13 +85,34 @@ public class BoardDao2 {
 		return re;
 	}
 	
+	public int deleteBoard(int seq) {
+		SqlSession sqlSession = getSqlSessionFactory().openSession();
+		int re = -1;
+		
+		try {
+			re = sqlSession.getMapper(BoardMapper.class).deleteBoard(seq);
+			if(re>0) {
+				sqlSession.commit();
+			}else {
+				sqlSession.rollback();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			if(sqlSession != null) {
+				sqlSession.close();
+			}
+		}
+		return re;
+	}
 	
-	public List<Board> listBoard(){
+	
+	public List<Board> listBoard(int startRow){
 		SqlSession sqlSession = getSqlSessionFactory().openSession();
 		List<Board> list = null;
 		
 		try {
-			list = sqlSession.getMapper(BoardMapper.class).listBoard();	
+			list = sqlSession.getMapper(BoardMapper.class).listBoard(new RowBounds(startRow, 2));	
 			//list = sqlSession.selectList("kosta.mapper.BoardMapper.listBoard");
 		} catch (Exception e) {
 			e.printStackTrace();
