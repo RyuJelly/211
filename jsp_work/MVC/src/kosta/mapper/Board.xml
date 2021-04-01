@@ -9,25 +9,25 @@
 	
 	<insert id="insertBoard" parameterType="Board">
 		insert into board(
-			SEQ, TITLE, WRITER, CONTENTS, REGDATE, HITCOUNT
+			SEQ, TITLE, WRITER, CONTENTS, REGDATE, HITCOUNT, FNAME
 		)
 		values(
-			BOARD_SEQ.NEXTVAL, #{title}, #{writer}, #{contents}, SYSDATE, 0
+			BOARD_SEQ.NEXTVAL, #{title}, #{writer}, #{contents}, SYSDATE, 0, #{fname}
 		)
 	
 	</insert>
 	
-	<select id="listBoard" resultType="Board">
+	<select id="listBoard" parameterType="Search" resultType="Board">
 		select * from board
-<!-- 		<if test="area != null">
+	 		<if test="area != null">
 			<where>
-				where (title LIKE %%aa% OR writer LIKE %aa%)
+				<!-- where (title LIKE %%aa% OR writer LIKE %aa%) -->
 				<foreach collection="area" item="item" separator="OR"
 					open="(" close=")">
 					${item} LIKE #{searchKey}
 				</foreach>
 			</where>
-		</if> -->
+		</if>
 		order by seq desc
 	</select>
 	
@@ -44,8 +44,25 @@
 		delete from board where seq = #{seq}
 	</delete>
 
-	<select id="countBoard" resultType="int">
+	<select id="countBoard" parameterType="Search" resultType="int">
 		select count(*) from board 
+		<if test="area != null">
+			<where>
+				<!-- where (title LIKE %%aa% OR writer LIKE %aa%) -->
+				<foreach collection="area" item="item" separator="OR"
+					open="(" close=")">
+					${item} LIKE #{searchKey}
+				</foreach>
+			</where>
+		</if>
+	</select>
+	
+	<insert id="insertReply" parameterType="Reply">
+		Insert into reply values(reply_seq.nextval, #{r_title }, #{r_writer }, #{r_contents }, SYSDATE, #{seq} )
+	</insert>
+	
+	<select id="listReply" parameterType="int" resultType="Reply">
+		select * from reply where seq = #{seq}
 	</select>
 	
 </mapper>

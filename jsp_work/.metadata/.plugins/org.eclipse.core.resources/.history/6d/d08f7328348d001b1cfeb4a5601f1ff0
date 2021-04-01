@@ -1,7 +1,0 @@
-package kosta.mapper;
-
-import kosta.bean.Board;
-
-public interface BoardMapper {
-	int insertBoard(Board board);
-}

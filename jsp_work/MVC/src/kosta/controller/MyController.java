@@ -15,6 +15,7 @@ import kosta.action.DeleteAction;
 import kosta.action.DetailAction;
 import kosta.action.InsertAction;
 import kosta.action.InsertFormAction;
+import kosta.action.InsertReplyAction;
 import kosta.action.ListAction;
 import kosta.action.UpdateAction;
 import kosta.action.UpdateFormAction;
@@ -86,6 +87,13 @@ public class MyController extends HttpServlet {
 			}
     	}else if(command.equals("deleteAction.do")) {
     		action = new DeleteAction();
+    		try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("insertReplyAction.do")) {
+    		action = new InsertReplyAction();
     		try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {
