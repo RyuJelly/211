@@ -1,0 +1,20 @@
+package chat;
+
+import java.sql.Connection;
+
+public class ChatDAO {
+
+	private Connection conn;
+	
+	public ChatDAO() {
+		try {
+			String dbURL = "jdbc:oracle:thin:@localhost:1521:XE";
+			String dbID = "middle_project";
+			String dbPassword = "1234";
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+}

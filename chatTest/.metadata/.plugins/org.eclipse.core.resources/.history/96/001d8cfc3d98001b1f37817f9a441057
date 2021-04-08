@@ -1,0 +1,19 @@
+package chat;
+
+import java.sql.Connection;
+
+public class ChatDAO2 {
+
+	private Connection conn;
+	
+	public ChatDAO2() {}
+	
+	public ChatDAO() {
+		try {
+			String dbURL = "jdbc"
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+}
