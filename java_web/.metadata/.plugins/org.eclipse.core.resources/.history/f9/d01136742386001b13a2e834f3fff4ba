@@ -1,9 +1,0 @@
-$(function(){
-	var $speech = $('div.speech');
-	var defaultSize = $speech.css('fontSize'); //12px
-	
-	$('#swicher button').click(function(){
-		var num = parseInt($speech.css('fontSize'));
-	});
-	
-});

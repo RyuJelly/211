@@ -7,4 +7,6 @@
 <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.TryCatchFinally"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="chat.Chat"/>
+<fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
+<fullyQualifiedTypeName name="chat.ChatDAO"/>
 </qualifiedTypeNameHistroy>

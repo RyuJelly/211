@@ -1,3 +1,5 @@
 INDEX VERSION 1.131
+C:\211\chatTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3435420122.index
+\anonymous\src
 C:\chatTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3435420122.index
 \anonymous\src

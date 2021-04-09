@@ -1,3 +1,0 @@
-$(function(){
-	$('<ol id=notes"></ol>').prependTo($('#footer'));
-})

@@ -14,7 +14,7 @@
 		values(
 			BOARD_SEQ.NEXTVAL, #{title}, #{writer}, #{contents}, SYSDATE, 0, #{fname}
 		)
-	
+		console.log("title: " + #{title});
 	</insert>
 	
 	<select id="listBoard" parameterType="Search" resultType="Board">

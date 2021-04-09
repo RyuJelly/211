@@ -3,13 +3,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/custom.css">
-<title>익명 채팅</title>
-<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<title>익명 채팅</title>
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+		function submitFunction(){
+			var chatName = $('#chatName').val();
+			var chatContent = $('#chatContent').val();
+			$.ajax({
+				type: "POST",
+				url: ".chatSubmitServlet",
+				data: {
+					chatName: chatName,
+					chatContent: chatContent
+				},
+				success: function(result){
+					if(result == 1){
+						alert("전송에 성공했습니다.");
+					} else if(result == 0){
+						alert("이름과 내용을 정확히 입력하세요");
+					} else{
+						alert("데이터베이스 오류가 발생했습니다.");
+					}
+				}
+			});
+			$("chatContent").val('');
+		}
+	</script>
 </head>
 <body>
 	<div class="container">
@@ -73,8 +97,7 @@
 									</div>
 									<div class="row" style="heigh: 90px;">
 										<div class="form-group col-xs-10">
-											<textarea style="height: 80px;" id="chatContent" class="form-control" placeholder="메세지를 입력하세요." maxlength="100">
-											</textarea>
+											<textarea style="height: 80px;" id="chatContent" class="form-control" placeholder="메세지를 입력하세요." maxlength="100"></textarea>
 										</div>
 										<div class="form-group col-xs-2">
 											<button type="button" class="btn btn-default pull-right" onclick="submitFunction();">전송</button>
