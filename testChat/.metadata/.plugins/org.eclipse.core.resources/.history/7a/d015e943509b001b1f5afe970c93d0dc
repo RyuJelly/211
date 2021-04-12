@@ -1,0 +1,5 @@
+package chat.action;
+
+public class ChatAction {
+
+}

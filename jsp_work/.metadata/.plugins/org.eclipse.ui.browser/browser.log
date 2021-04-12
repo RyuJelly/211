@@ -65,3 +65,12 @@
 4월 08, 2021 10:32:05.30 [12404:15912:0408/103205.297:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
 4월 08, 2021 10:32:14.38 [6800:9072:0408/103214.384:ERROR:device_event_log_impl.cc(214)] [10:32:14.383] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 4월 08, 2021 10:32:14.39 [6800:9072:0408/103214.389:ERROR:device_event_log_impl.cc(214)] [10:32:14.389] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+
+4월 12, 2021 14:36:38.42 NEW SESSION
+4월 12, 2021 14:36:38.42 [12052:6692:0412/143638.419:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+4월 12, 2021 14:36:38.44 [12052:6692:0412/143638.419:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\KOSTA\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+4월 12, 2021 14:36:38.44 [12052:6692:0412/143638.419:ERROR:disk_cache.cc(184)] Unable to create cache
+4월 12, 2021 14:36:38.44 [12052:6692:0412/143638.419:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+4월 12, 2021 14:36:54.38 [9984:6968:0412/143654.380:ERROR:device_event_log_impl.cc(214)] [14:36:54.380] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 12, 2021 14:36:54.38 [9984:6968:0412/143654.385:ERROR:device_event_log_impl.cc(214)] [14:36:54.384] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 12, 2021 14:36:54.41 [9984:6968:0412/143654.398:ERROR:device_event_log_impl.cc(214)] [14:36:54.397] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.

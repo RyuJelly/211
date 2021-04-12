@@ -1,0 +1,42 @@
+package chat.model;
+
+public class Chat {
+	private String writer;
+	private String content;
+	private String regdate;
+	
+	public Chat() {}
+
+	public Chat(String writer, String content, String regdate) {
+		super();
+		this.writer = writer;
+		this.content = content;
+		this.regdate = regdate;
+	}
+
+	public String getWriter() {
+		return writer;
+	}
+
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public String getRegdate() {
+		return regdate;
+	}
+
+	public void setRegdate(String regdate) {
+		this.regdate = regdate;
+	}
+	
+	
+}

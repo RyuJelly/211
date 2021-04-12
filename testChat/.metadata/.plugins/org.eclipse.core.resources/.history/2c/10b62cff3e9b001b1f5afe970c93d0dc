@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>채팅</title>
+</head>
+<body>
+	<div class="container">
+		<div class="textLog">
+			<div class="input">
+				<div>
+					<input style="height: 40px;" type="text" id="chatName"
+						class="form-control" placeholder="이름" maxlength="20">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

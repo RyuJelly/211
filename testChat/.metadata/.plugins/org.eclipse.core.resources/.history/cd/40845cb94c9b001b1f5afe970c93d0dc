@@ -1,0 +1,25 @@
+package chat.model;
+
+import java.io.InputStream;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSessionFactory;
+
+public class ChatDao {
+	public static ChatDao dao = new ChatDao();
+	
+	public static ChatDao getInstance() {
+		return dao;
+	}
+	
+	public SqlSessionFactory getSqlSessionFactory() {
+		String resource = "mybatis-config.xml";
+		InputStream in = null;
+		
+		try {
+			in = Resource
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

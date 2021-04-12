@@ -1,0 +1,7 @@
+package chat.mapper;
+
+import chat.model.Chat;
+
+public class ChatMapper {
+	int insertChat(Chat chat);
+}

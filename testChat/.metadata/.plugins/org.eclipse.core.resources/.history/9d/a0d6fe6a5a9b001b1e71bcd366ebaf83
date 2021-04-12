@@ -1,0 +1,8 @@
+package chat.mapper;
+
+import chat.model.Chat;
+
+public interface ChatMapper {
+	int insertChat(Chat chat);
+	Chat listChat();
+}

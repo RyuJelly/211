@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="chat.mapper.ChatMapper">
+	<cache />
+	
+	<insert id="insertChat" parameterType="Chat">
+		insert into chat values( #{writer}, #{contents}, #{regdate})
+	</insert>
+	
+	<select id="listChat" resultType="Chat">
+		select * from chat
+	</select>
+	
+	
+	<insert id="insertBoard" parameterType="Board">
+		insert into board(
+			SEQ, TITLE, WRITER, CONTENTS, REGDATE, HITCOUNT, FNAME
+		)
+		values(
+			BOARD_SEQ.NEXTVAL, #{title}, #{writer}, #{contents}, SYSDATE, 0, #{fname}
+		)
+	</insert>
+	
+	<select id="listBoard" parameterType="Search" resultType="Board">
+		select * from board
+	 		<if test="area != null">
+			<where>
+				<!-- where (title LIKE %%aa% OR writer LIKE %aa%) -->
+				<foreach collection="area" item="item" separator="OR"
+					open="(" close=")">
+					${item} LIKE #{searchKey}
+				</foreach>
+			</where>
+		</if>
+		order by seq desc
+	</select>
+	
+	<select id="detailBoard" parameterType="int" resultType="Board">
+		select * from board where seq = #{seq}
+	</select>
+	
+	<update id="updateBoard" parameterType="Board">
+		update board Set title = #{title}, contents = #{contents}
+			Where seq = #{seq}
+	</update>
+	
+	<delete id="deleteBoard" parameterType="int">
+		delete from board where seq = #{seq}
+	</delete>
+
+	<select id="countBoard" parameterType="Search" resultType="int">
+		select count(*) from board 
+		<if test="area != null">
+			<where>
+				<!-- where (title LIKE %%aa% OR writer LIKE %aa%) -->
+				<foreach collection="area" item="item" separator="OR"
+					open="(" close=")">
+					${item} LIKE #{searchKey}
+				</foreach>
+			</where>
+		</if>
+	</select>
+	
+	<insert id="insertReply" parameterType="Reply">
+		Insert into reply values(reply_seq.nextval, #{r_title }, #{r_writer }, #{r_contents }, SYSDATE, #{seq} )
+	</insert>
+	
+	<select id="listReply" parameterType="int" resultType="Reply">
+		select * from reply where seq = #{seq}
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

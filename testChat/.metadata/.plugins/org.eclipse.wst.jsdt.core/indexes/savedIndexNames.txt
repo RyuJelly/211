@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\testChat\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2268057402.index
+2590781592.index
+3419632211.index
+1584643962.index
+3922043837.index
+3307132094.index
+2132342881.index

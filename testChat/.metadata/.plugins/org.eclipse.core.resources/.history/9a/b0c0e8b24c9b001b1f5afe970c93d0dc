@@ -1,0 +1,9 @@
+package chat.model;
+
+public class ChatDao {
+	public static ChatDao dao = new ChatDao();
+	
+	public static ChatDao getInstance() {
+		return dao;
+	}
+}

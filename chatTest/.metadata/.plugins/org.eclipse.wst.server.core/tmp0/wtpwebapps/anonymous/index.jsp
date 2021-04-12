@@ -16,7 +16,7 @@
 			var chatContent = $('#chatContent').val();
 			$.ajax({
 				type: "POST",
-				url: ".chatSubmitServlet",
+				url: "./chatSubmitServlet",
 				data: {
 					chatName: chatName,
 					chatContent: chatContent
