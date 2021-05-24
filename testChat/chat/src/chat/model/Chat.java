@@ -1,6 +1,8 @@
 package chat.model;
 
-public class Chat {
+import java.io.Serializable;
+
+public class Chat implements Serializable{
 	private String writer;
 	private String contents;
 	private String regdate;

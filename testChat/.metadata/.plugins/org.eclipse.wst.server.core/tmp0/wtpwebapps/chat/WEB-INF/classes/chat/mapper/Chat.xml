@@ -8,7 +8,7 @@
 	<cache />
 	
 	<insert id="insertChat" parameterType="Chat">
-		insert into chat values( #{writer}, #{contents}, #{regdate})
+		insert into chat values( #{writer}, #{contents}, SYSDATE)
 	</insert>
 	
 	<select id="listChat" resultType="Chat">
