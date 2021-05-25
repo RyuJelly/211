@@ -1,0 +1,269 @@
+2021-05-25 15:31:01,129 [Worker-17] ERROR o.e.jgit.ignore.FastIgnoreRule - Not closed bracket?
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:434) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:169) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:128) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:127) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1221) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:695) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:663) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:643) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:630) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:822) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:437) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:665) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:653) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:403) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2021-05-25 15:31:05,622 [Worker-3] ERROR o.e.jgit.ignore.FastIgnoreRule - Not closed bracket?
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:434) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:169) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:128) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:127) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1221) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:695) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:663) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:643) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:630) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:822) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:437) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:665) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:653) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:403) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2021-05-25 15:31:50,284 [Worker-2] ERROR o.e.jgit.ignore.FastIgnoreRule - Not closed bracket?
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:434) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:169) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:128) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:127) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1221) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:695) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:663) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:643) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:630) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:822) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:437) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:665) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:653) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:403) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2021-05-25 15:32:04,136 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.used:noticeBoard:1.0.0-BUILD-SNAPSHOT @ C:\211\finalProject\middle\pom.xml.
+2021-05-25 15:32:07,137 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-25 15:32:07,147 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2021-05-25 15:32:07,349 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-25 15:32:07,353 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-05-25 15:32:07,683 [Worker-5] ERROR o.e.jgit.ignore.FastIgnoreRule - Not closed bracket?
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:434) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:169) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:128) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:127) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1221) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:695) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:663) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:643) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:630) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:822) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:437) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:665) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:653) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:403) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2021-05-25 15:32:11,803 [Worker-18] ERROR o.e.jgit.ignore.FastIgnoreRule - Not closed bracket?
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:434) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:169) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:128) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:127) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1221) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:695) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:663) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:643) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:630) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:822) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:437) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:607) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:586) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:532) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2021-05-25 15:33:40,336 [Worker-8] ERROR o.e.jgit.ignore.FastIgnoreRule - Not closed bracket?
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:434) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:169) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:128) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:127) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1221) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:695) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:663) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:643) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:630) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:822) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:437) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:665) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:653) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:403) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2021-05-25 15:33:40,353 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-25 15:33:40,414 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2021-05-25 15:33:40,429 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-25 15:33:40,431 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-05-25 15:34:23,792 [Worker-5] ERROR o.e.jgit.ignore.FastIgnoreRule - Not closed bracket?
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:434) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:169) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:128) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:127) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1221) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:695) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:663) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:643) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:630) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:822) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:437) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:607) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:586) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:532) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2021-05-25 15:34:23,849 [Worker-8] ERROR o.e.jgit.ignore.FastIgnoreRule - Not closed bracket?
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:434) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:169) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:128) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:127) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1221) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:695) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:663) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:643) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:630) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:822) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:437) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:607) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:586) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:532) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2021-05-25 15:34:23,989 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-25 15:34:23,990 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-25 15:34:23,992 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-25 15:34:23,995 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-05-25 15:36:29,164 [Worker-17] ERROR o.e.jgit.ignore.FastIgnoreRule - Not closed bracket?
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:434) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:169) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:128) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:127) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1221) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:695) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:663) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:643) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:630) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:822) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:437) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:607) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:586) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:532) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2021-05-25 15:36:29,223 [Worker-4] ERROR o.e.jgit.ignore.FastIgnoreRule - Not closed bracket?
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:434) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:169) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:128) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:127) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1221) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:695) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:663) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:643) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:630) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:822) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:437) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:607) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:586) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:532) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2021-05-25 15:36:30,535 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-25 15:36:30,539 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2021-05-25 15:36:30,556 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-25 15:36:30,559 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-05-25 15:36:37,752 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2021-05-25 15:36:38,147 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.used:noticeBoard:1.0.0-BUILD-SNAPSHOT @ C:\211\finalProject\middle\pom.xml.
+2021-05-25 15:36:38,970 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /middle/src/main/java
+2021-05-25 15:36:38,972 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /middle/src/main/resources
+2021-05-25 15:36:38,972 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /middle/src/test/java
+2021-05-25 15:36:38,973 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /middle/src/test/resources
+2021-05-25 15:36:57,930 [Worker-9] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for middle
+2021-05-25 15:36:57,958 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 20 sec
+2021-05-25 15:36:57,992 [Worker-17] ERROR o.e.jgit.ignore.FastIgnoreRule - Not closed bracket?
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:434) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:169) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:128) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:127) ~[org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1221) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:695) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:663) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:643) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:630) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:822) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:437) [org.eclipse.jgit_4.5.0.201609210915-r.jar:4.5.0.201609210915-r]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:607) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:586) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:532) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75) [org.eclipse.egit.core_4.5.0.201609210915-r.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2021-05-25 15:36:59,127 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-25 15:36:59,129 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2021-05-25 15:36:59,149 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-25 15:36:59,151 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-05-25 15:36:59,156 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of middle
+2021-05-25 15:36:59,157 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for middle
+2021-05-25 15:36:59,227 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!

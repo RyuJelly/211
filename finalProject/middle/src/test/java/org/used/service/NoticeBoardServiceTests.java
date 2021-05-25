@@ -1,8 +1,5 @@
 package org.used.service;
 
-import static org.junit.Assert.assertNotNull;
-
-import org.apache.catalina.mapper.Mapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,13 +30,13 @@ public class NoticeBoardServiceTests {
 //	@Test
 //	public void testRegister(){
 //		NoticeBoardVO vo = new NoticeBoardVO();
-//		vo.setNotice_title("새로 등록하는 제목");
-//		vo.setNotice_contents("새로 작성하는 내용");
+//		vo.setNotice_title("�깉濡� �벑濡앺븯�뒗 �젣紐�");
+//		vo.setNotice_contents("�깉濡� �옉�꽦�븯�뒗 �궡�슜");
 //		vo.setNotice_writer("newbie");
 //		
 //		service.register(vo);
 //		
-//		log.info("생성된 게시물의 번호: " + vo.getNotice_id());
+//		log.info("�깮�꽦�맂 寃뚯떆臾쇱쓽 踰덊샇: " + vo.getNotice_id());
 //		
 //	}
 	
@@ -68,7 +65,7 @@ public class NoticeBoardServiceTests {
 			return;
 		}
 		
-		vo.setNotice_title("service테스트타이틀");
+		vo.setNotice_title("service�뀒�뒪�듃���씠��");
 		log.info("update: " + service.modify(vo));
 	}
 	
